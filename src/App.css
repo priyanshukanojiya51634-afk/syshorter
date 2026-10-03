@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+}
 .App {
   text-align: center;
 }
@@ -34,5 +39,175 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+/*application decsione*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  color: greenyellow;
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.Urllog {
+  padding: 15px 10px;
+}
+.Totallink,
+.Totalclick {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 20px;
+}
+/*Shorting home page*/
+.Scontainer {
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 50px;
+  padding: 15px 20px;
+}
+.text {
+  color: white;
+}
+h1 {
+  color: greenyellow;
+}
+h2 {
+  color: greenyellow;
+}
+.enterurl {
+  padding: 12px 8px;
+  width: 500px;
+  margin: 22px 15px;
+  border-radius: 12px;
+  color: white;
+}
+.urlbtn {
+  color: rgb(8, 8, 8);
+  background-color: greenyellow;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+}
+.urlbtn:hover {
+  background-color: rgb(231, 235, 226);
+  transform: scale(1.1);
+}
+.previouslink {
+  width: 100%;
+  padding: 10px 15px;
+  border-collapse: collapse;
+  color: grey;
+  table-layout: fixed;
+}
+.sidewrep {
+  text-align: right;
+  padding: 12px 9px;
+}
+.previouslink:hover {
+  color: white;
+  cursor: pointer;
+}
+.previouslink th:first-child,
+.previouslink td:first-child {
+  width: 40%;
+  overflow-wrap: anywhere;
+}
+/*Copy button*/
+.copybtn {
+  margin-left: 8px;
+  padding: 3px 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+/*Resomponcive desingen*/
+@media (max-width: 1200px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  .Totalclick,
+  .Totallink {
+    margin-left: 0;
+  }
+}
+@media (max-width: 900px) {
+  .Totalclick {
+    margin-right: 30px;
+  }
+  .enterurl {
+    width: 65%;
+  }
+  .sidewrep {
+    text-align: center;
+    white-space: nowrap;
+  }
+  .Urllog {
+    margin-left: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .enterurl {
+    width: 80%;
+    margin: 22px 0 10px;
+    box-sizing: border-box;
+  }
+  .urlbtn {
+    display: block;
+  }
+  .Scontainer {
+    margin-left: 0;
+    padding: 15px;
+  }
+  .sidewrep {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .Totalclick,
+  .Totallink {
+    margin-left: 0;
+    margin-right: 0;
+    white-space: anywhere;
+  }
+  .container {
+    width: 40%;
+    justify-content: space-around;
+    gap: 8px;
+  }
+  .copybtn {
+    margin: 10px 15px;
+  }
+  .previouslink {
+    table-layout: fixed;
+    width: 100%;
+  }
+  .previouslink th:first-child,
+  .previouslink td:first-child {
+    width: 54%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .previouslink .sidewrep {
+    width: 32.1%;
+    padding: 8px 4px;
+  }
+  .Urllog {
+    margin-left: 13px;
   }
 }
